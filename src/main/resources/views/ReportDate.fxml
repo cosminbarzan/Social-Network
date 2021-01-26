@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.*?>
+<?import de.jensd.fx.glyphs.fontawesome.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="320.0" prefWidth="580.0" style="-fx-background-color: #1e2433;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="socialnetwork.controller.ReportDateController">
+   <children>
+      <DatePicker fx:id="datePicker1" layoutX="190.0" layoutY="127.0" prefWidth="200.0" promptText="Select Start Date" stylesheets="@../css/picker.css" />
+      <DatePicker fx:id="datePicker2" layoutX="190.0" layoutY="201.0" prefWidth="200.0" promptText="Select End Date" stylesheets="@../css/picker.css" />
+      <JFXComboBox fx:id="comboBox" focusColor="BLACK" layoutX="190.0" layoutY="54.0" prefWidth="200.0" promptText="Select User" stylesheets="@../css/picker.css" />
+      <JFXButton layoutX="190.0" layoutY="258.0" onMouseClicked="#reports" prefWidth="200.0" stylesheets="@../css/picker.css" text="Enter">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font></JFXButton>
+   </children>
+</AnchorPane>

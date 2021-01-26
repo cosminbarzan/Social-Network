@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import com.jfoenix.controls.*?>
+<?import de.jensd.fx.glyphs.fontawesome.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.shape.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane fx:id="anchor_pane2" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="socialnetwork.controller.DashboardController">
+   <children>
+      <AnchorPane prefHeight="600.0" prefWidth="220.0" style="-fx-background-color: #1e2433;">
+         <children>
+            <JFXButton alignment="BASELINE_LEFT" graphicTextGap="15.0" layoutX="14.0" layoutY="78.0" onMouseClicked="#loadProfile" prefWidth="200.0" text="  Your Profile" textFill="WHITE">
+               <graphic>
+                  <FontAwesomeIcon fill="WHITE" iconName="USER" size="1.3em" />
+               </graphic>
+               <font>
+                  <Font name="System Bold Italic" size="13.0" />
+               </font>
+            </JFXButton>
+            <JFXButton fx:id="messagesBtn" alignment="BASELINE_LEFT" graphicTextGap="15.0" layoutX="14.0" layoutY="136.0" onMouseClicked="#messages" prefWidth="200.0" ripplerFill="WHITE" stylesheets="@../css/style.css" text=" Messages" textFill="WHITE">
+               <graphic>
+                  <FontAwesomeIcon fill="WHITE" iconName="ENVELOPE" size="1.3em" text="" />
+               </graphic>
+               <font>
+                  <Font name="System Bold Italic" size="13.0" />
+               </font>
+
+                        </JFXButton>
+            <JFXButton fx:id="showReqBtn" alignment="BASELINE_LEFT" graphicTextGap="15.0" layoutX="14.0" layoutY="107.0" onMouseClicked="#ShowRequests" prefWidth="200.0" ripplerFill="WHITE" stylesheets="@../css/style.css" text=" Friend Requests" textFill="WHITE">
+               <graphic>
+                  <FontAwesomeIcon fill="WHITE" iconName="USERS" size="1.3em" />
+               </graphic>
+               <font>
+                  <Font name="System Bold Italic" size="13.0" />
+               </font>
+      
+                  </JFXButton>
+            <JFXButton alignment="BASELINE_LEFT" graphicTextGap="15.0" layoutX="14.0" layoutY="165.0" onMouseClicked="#goToReports" prefWidth="200.0" ripplerFill="WHITE" style="-fx-font-size: 13; -fx-font-style: Italic; -fx-font-weight: bold;" styleClass="jfx-button" stylesheets="@../css/style.css" text="Reports" textFill="WHITE">
+               <graphic>
+                  <FontAwesomeIcon fill="WHITE" iconName="CUBES" size="1.3em" />
+               </graphic>
+               <font>
+                  <Font name="System Bold Italic" size="18.0" />
+               </font>
+
+                        </JFXButton>
+            <JFXButton alignment="BASELINE_LEFT" graphicTextGap="15.0" layoutX="14.0" layoutY="200.0" onMouseClicked="#events" prefWidth="200.0" ripplerFill="WHITE" style="-fx-font-weight: bold; -fx-font-style: italic; -fx-font-size: 13;" stylesheets="@../css/style.css" text="  Events" textFill="WHITE">
+               <graphic>
+                  <FontAwesomeIcon fill="WHITE" iconName="CALENDAR" size="1.3em" />
+               </graphic>
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </JFXButton>
+            <JFXButton alignment="BASELINE_LEFT" graphicTextGap="15.0" layoutX="14.0" layoutY="229.0" onMouseClicked="#notifications" prefWidth="200.0" ripplerFill="WHITE" stylesheets="@../css/style.css" text="  Notifications" textFill="WHITE">
+               <graphic>
+                  <FontAwesomeIcon fill="WHITE" iconName="BELL" size="1.3em" />
+               </graphic>
+               <font>
+                  <Font name="System Bold Italic" size="13.0" />
+               </font>
+            </JFXButton>
+            <Pagination fx:id="pagination" layoutX="10.0" layoutY="343.0" maxPageIndicatorCount="1" pageCount="1" prefHeight="160.0" prefWidth="200.0" stylesheets="@../css/picker.css" />
+            <TableView fx:id="tableView" layoutX="10.0" layoutY="314.0" prefHeight="131.0" prefWidth="200.0" stylesheets="@../css/friendsTable.css">
+              <columns>
+                <TableColumn fx:id="imageColumn" minWidth="40.0" prefWidth="40.0" text="Photo" />
+                <TableColumn fx:id="firstNameColumn" minWidth="66.0" prefWidth="160.0" text="Last Name" />
+                  <TableColumn fx:id="emailColumn" minWidth="0.0" prefWidth="0.0" text="Email" />
+              </columns>
+            </TableView>
+            <JFXButton fx:id="logoutBtn" alignment="BASELINE_LEFT" graphicTextGap="15.0" layoutX="14.0" layoutY="560.0" onMouseClicked="#handleLogout" prefWidth="200.0" ripplerFill="WHITE" stylesheets="@../css/style.css" text="Logout" textFill="WHITE">
+               <graphic>
+                  <FontAwesomeIcon fill="WHITE" iconName="SIGN_OUT" size="1.3em" />
+               </graphic>
+               <font>
+                  <Font name="System Bold Italic" size="13.0" />
+               </font>
+
+                                    </JFXButton>
+            <JFXButton fx:id="removeBtn" alignment="BASELINE_LEFT" layoutX="14.0" layoutY="500.0" onMouseClicked="#remove" prefWidth="200.0" text="Remove Friend" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font></JFXButton>
+            <Label layoutX="65.0" layoutY="30.0" text="Dali's App" textFill="#6747cd">
+               <font>
+                  <Font name="Comic Sans MS Bold Italic" size="18.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER" layoutY="310.0" prefWidth="220.0" style="-fx-font-weight: bold;" stylesheets="@../css/labels.css" text="─── Dali's Users ───" textFill="WHITE">
+               <font>
+                  <Font name="Comic Sans MS" size="13.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="220.0" opacity="0.93" prefHeight="600.0" prefWidth="580.0" style="-fx-background-color: #1e2433;">
+         <children>
+            <Pane layoutY="56.0" opacity="0.35" prefHeight="120.0" prefWidth="580.0" style="-fx-background-color: #6747CD; -fx-background-radius: 20;">
+               <children>
+                  <Label fx:id="welcomeLabel" layoutX="230.0" layoutY="47.0" style="-fx-text-fill: #ffffff;" text="Name" textFill="WHITE" wrapText="true">
+                     <font>
+                        <Font name="Comic Sans MS" size="18.0" />
+                     </font></Label>
+                  <Label fx:id="contactLabel" layoutX="432.0" layoutY="51.0" style="-fx-text-fill: #ffffff; -fx-font-size: 13;" text="Contact" textFill="WHITE" wrapText="true">
+                     <font>
+                        <Font name="Comic Sans MS" size="13.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
+            <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="46.0" layoutY="80.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/profile.png" />
+               </image>
+            </ImageView>
+            <AnchorPane fx:id="changing_anchor_pane" layoutY="232.0" opacity="0.93" prefHeight="360.0" prefWidth="580.0">
+               <children>
+                  <AnchorPane fx:id="upPane" prefHeight="300.0" prefWidth="580.0">
+                     <children>
+                        <TableView fx:id="tableView1" layoutX="130.0" layoutY="61.0" prefHeight="120.0" prefWidth="320.0" style="-fx-background-color: #1e2433fa;" stylesheets="@../css/style.css">
+                           <columns>
+                              <TableColumn fx:id="firstNameColumn1" minWidth="66.0" prefWidth="75.0" text="First Name" />
+                              <TableColumn fx:id="lastNameColumn1" minWidth="66.0" prefWidth="75.0" text="Last Name" />
+                              <TableColumn fx:id="emailColumn1" minWidth="67.0" prefWidth="170.0" text="Email" />
+                           </columns>
+                        </TableView>
+                        <JFXButton fx:id="sendReqBtn" layoutX="130.0" layoutY="210.0" onMouseClicked="#sendRequest" stylesheets="@../css/picker.css" text="Send Request">
+                           <font>
+                              <Font name="System Bold" size="13.0" />
+                           </font>
+                        </JFXButton>
+                        <JFXButton fx:id="cancelReqBtn" layoutX="339.0" layoutY="210.0" onMouseClicked="#cancelRequest" stylesheets="@../css/picker.css" text="Cancel Request">
+                           <font>
+                              <Font name="System Bold" size="13.0" />
+                           </font>
+                        </JFXButton>
+                     </children></AnchorPane>
+                  <AnchorPane fx:id="downPane" layoutY="300.0" prefHeight="60.0" prefWidth="580.0">
+                     <children>
+                        <JFXButton fx:id="showReportsBtn" layoutX="190.0" layoutY="16.0" onMouseClicked="#loadReports" prefWidth="200.0" stylesheets="@../css/picker.css" text="Show Report" textFill="WHITE">
+                           <font>
+                              <Font name="System Bold" size="13.0" />
+                           </font></JFXButton>
+                     </children>
+                  </AnchorPane>
+               </children>
+            </AnchorPane>
+            <JFXTextField fx:id="textFieldSearchUser" layoutX="40.0" layoutY="12.0" prefWidth="270.0" promptText="Search for users . . ." />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

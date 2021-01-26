@@ -1,0 +1,95 @@
+/*.back {
+    -fx-background-image: url("../images/back5.jpg");
+    -fx-background-size: cover;
+}*/
+.sidebar {
+    -fx-background-color: #6747CD;
+}
+
+.loginBtn {
+    -fx-background-color: #6747CD;
+    -fx-text-fill: #FFF;
+    -fx-background-radius: 3px;
+}
+
+.loginBtn:hover {
+    -fx-background-color: transparent;
+    -fx-background-radius: 3px;
+    -fx-border-color: #6747CD;
+    -fx-border-width: 1px;
+    -fx-border-style: solid;
+    -fx-border-radius: 3px;
+}
+
+.closeBtn {
+    -fx-fill: #1e2433;
+}
+
+.closeBtn:hover {
+    fx-fill: #ff6666;
+}
+
+.backBtnReports {
+    -fx-fill: #6747CD;
+}
+
+.backBtn {
+    -fx-fill: #1e2433;
+}
+
+
+.backBtn {
+    -fx-fill: #6747CD;
+}
+
+.jfx-text-field, .jfx-password-field {
+    -fx-prompt-text-fill: WHITE;
+    -jfx-focus-color: WHITE;
+    -jfx-unfocus-color: WHITE;
+    -fx-fill: WHITE;
+    -fx-text-fill: WHITE;
+    -fx-opacity: 0.8;
+}
+
+.table-row-cell {
+    -fx-background-color: #1e2433fa;
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+    -fx-font-family: "Comic Sans MS";
+}
+
+.table-column-cell {
+    -fx-background-color: #1e2433fa;
+}
+
+.column-header-background {
+    -fx-max-height: 0;
+    -fx-pref-height: 0;
+    -fx-min-height: 0;
+}
+
+.table-view {
+    -fx-table-cell-border-color: transparent;
+}
+
+.table-view .scroll-bar * {
+    -fx-min-width: 0;
+    -fx-pref-width: 0;
+    -fx-max-width: 0;
+
+    -fx-min-height: 0;
+    -fx-pref-height: 0;
+    -fx-max-height: 0;
+}
+
+.table-cell {
+    -fx-text-fill: white;
+}
+
+.table-view {
+    -fx-background-color:  #1e2433fa;
+}
+
+.button:hover {
+    -fx-background-color:  #6747CD;
+}

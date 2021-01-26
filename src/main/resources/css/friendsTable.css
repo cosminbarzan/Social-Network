@@ -1,0 +1,40 @@
+.table-row-cell {
+    -fx-background-color: #1e2433fa;
+    -fx-text-fill: #6747CD;
+    -fx-font-weight: bold;
+    -fx-font-family: "Comic Sans MS";
+    -fx-font-size: 10;
+}
+
+.table-column-cell {
+    -fx-background-color: #1e2433fa;
+}
+
+.column-header-background {
+    -fx-max-height: 0;
+    -fx-pref-height: 0;
+    -fx-min-height: 0;
+}
+
+.table-view {
+    -fx-table-cell-border-color: transparent;
+}
+
+.table-view .scroll-bar * {
+    -fx-min-width: 0;
+    -fx-pref-width: 0;
+    -fx-max-width: 0;
+
+    -fx-min-height: 0;
+    -fx-pref-height: 0;
+    -fx-max-height: 0;
+}
+
+.table-cell {
+    -fx-text-fill: #6747CD;
+}
+
+.table-view {
+    -fx-background-color:  #1e2433fa;
+}
+

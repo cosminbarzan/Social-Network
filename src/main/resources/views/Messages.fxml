@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.*?>
+<?import javafx.scene.text.*?>
+<?import com.jfoenix.controls.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="390.0" prefWidth="580.0" style="-fx-background-color: #1e2433;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="socialnetwork.controller.MessagesController">
+   <children>
+      <TableView fx:id="tableView3" layoutX="98.0" layoutY="71.0" prefHeight="150.0" prefWidth="400.0" style="-fx-background-color: #1e2433;" styleClass="ladder" stylesheets="@../css/style.css">
+         <columns>
+            <TableColumn fx:id="fromColumn" minWidth="80.0" prefWidth="75.0" text="From" />
+            <TableColumn fx:id="toColumn" minWidth="80.0" prefWidth="75.0" text="To" />
+            <TableColumn fx:id="messageColumn" minWidth="80.0" prefWidth="75.0" text="Message" />
+            <TableColumn fx:id="dateMesColumn" minWidth="80.0" prefWidth="75.0" text="Date" />
+            <TableColumn fx:id="replyColumn" minWidth="80.0" prefWidth="75.0" text="Reply" />
+         </columns>
+      </TableView>
+      <JFXTextField fx:id="typeMessage" layoutX="98.0" layoutY="277.0" opacity="0.8" prefWidth="380.0" promptText="Type message . . ." styleClass="text" stylesheets="@../css/style.css" unFocusColor="WHITE" />
+      <JFXButton fx:id="sendMesBtn" alignment="BASELINE_LEFT" layoutX="480.0" layoutY="276.0" onMouseClicked="#sendMessage" prefHeight="29.0" prefWidth="30.0" ripplerFill="WHITE" stylesheets="@../css/picker.css" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+         <graphic>
+            <FontAwesomeIcon fill="WHITE" iconName="SEND" size="1.1em" />
+         </graphic></JFXButton>
+      <JFXButton fx:id="sendReplyBtn" alignment="BASELINE_LEFT" graphicTextGap="15.0" layoutX="505.0" layoutY="276.0" onMouseClicked="#sendReply" prefHeight="29.0" prefWidth="34.0" ripplerFill="WHITE" stylesheets="@../css/picker.css" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+         <graphic>
+            <FontAwesomeIcon fill="WHITE" iconName="REPLY" size="1.1em" />
+         </graphic></JFXButton>
+      <Pagination fx:id="pagination3" layoutX="98.0" layoutY="83.0" maxPageIndicatorCount="1" prefHeight="200.0" prefWidth="400.0" />
+   </children>
+</AnchorPane>

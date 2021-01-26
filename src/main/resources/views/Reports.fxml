@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.chart.*?>
+<?import de.jensd.fx.glyphs.fontawesome.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane fx:id="anchor_pane3" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" style="-fx-background-color: white;" stylesheets="@../css/style.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="socialnetwork.controller.ReportsController">
+   <children>
+      <Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="300.0" prefWidth="800.0" style="-fx-background-color: #1e2433;">
+         <children>
+            <BarChart fx:id="barChart" layoutX="100.0" prefHeight="250.0" prefWidth="600.0" style="-fx-background-color: #1e2433;" title="Your Activity">
+              <xAxis>
+                <CategoryAxis fx:id="idDay" label="Day" side="BOTTOM" style="-fx-background-color: #1e2433;" tickLabelFill="WHITE" />
+              </xAxis>
+              <yAxis>
+                <NumberAxis fx:id="idActivities" label="Activities" side="LEFT" style="-fx-background-color: #1e2433;" tickLabelFill="WHITE" upperBound="10.0" />
+              </yAxis>
+            </BarChart>
+            <FontAwesomeIcon fill="WHITE" iconName="ARROW_LEFT" layoutX="2.0" layoutY="23.0" onMouseClicked="#backToDashboard" size="1.5em" styleClass="backBtnReports" />
+         </children>
+      </Pane>
+      <Pane layoutY="300.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="300.0" prefWidth="800.0" style="-fx-background-color: #1e2433;">
+         <children>
+            <PieChart fx:id="pieChart" layoutX="234.0" layoutY="25.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="250.0" prefWidth="400.0" style="-fx-background-color: #1e2433;" stylesheets="@../css/picker.css" title="Messages" />
+         </children></Pane>
+   </children>
+</AnchorPane>

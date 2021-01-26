@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.text.*?>
+<?import com.jfoenix.controls.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="390.0" prefWidth="580.0" style="-fx-background-color: #1e2433;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="socialnetwork.controller.RequestsController">
+   <children>
+      <TableView fx:id="tableView2" layoutX="98.0" layoutY="71.0" prefHeight="150.0" prefWidth="400.0" style="-fx-background-color: #1e2433;">
+         <columns>
+            <TableColumn fx:id="nameColumn" minWidth="123.0" prefWidth="75.0" style="-fx-max-height: 0; -fx-min-height: 0; -fx-pref-height: 0;" text="Name" />
+            <TableColumn fx:id="statusColumn" minWidth="93.0" prefWidth="55.0" text="Status" />
+            <TableColumn fx:id="dateColumn" minWidth="183.0" prefWidth="75.0" text="Date" />
+         </columns>
+      </TableView>
+      <JFXButton fx:id="rejectReqBtn" layoutX="425.0" layoutY="307.0" onMouseClicked="#rejectRequest" style="-fx-font-weight: bold;" stylesheets="@../css/picker.css" text="Reject" textFill="WHITE">
+         <font>
+            <Font size="13.0" />
+         </font>
+         <effect>
+            <DropShadow />
+         </effect></JFXButton>
+      <Pagination fx:id="pagination2" layoutX="98.0" layoutY="83.0" maxPageIndicatorCount="1" prefHeight="200.0" prefWidth="400.0" />
+      <JFXButton fx:id="approveReqBtn" layoutX="98.0" layoutY="307.0" onMouseClicked="#approveRequest" style="-fx-font-weight: bold;" stylesheets="@../css/picker.css" text="Approve" textFill="WHITE">
+         <effect>
+            <DropShadow />
+         </effect>
+         <font>
+            <Font size="13.0" />
+         </font>
+      </JFXButton>
+   </children>
+</AnchorPane>

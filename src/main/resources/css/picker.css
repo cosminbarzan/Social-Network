@@ -1,0 +1,59 @@
+.date-picker .text-field {
+    -fx-control-inner-background: #1e2433 ;
+    -fx-prompt-text-fill: gray;
+}
+
+.jfx-combo-box .text-field {
+    -fx-prompt-text-fill: red ;
+}
+.jfx-combo-box {
+    -fx-prompt-text-fill: WHITE;
+    -jfx-focus-color: WHITE;
+    -jfx-unfocus-color: WHITE;
+    -fx-fill: WHITE;
+    -fx-text-fill: WHITE;
+    -fx-opacity: 0.8;
+}
+
+.jfx-button {
+    -fx-background-color: #6747CD;
+    -fx-prompt-text-fill: WHITE;
+    -jfx-focus-color: WHITE;
+    -jfx-unfocus-color: WHITE;
+    -fx-fill: WHITE;
+    -fx-text-fill: WHITE;
+
+}
+
+.jfx-button :hover{
+    -fx-background-color: -fx-shadow-highlight-color, -fx-outer-border, -fx-inner-border, -fx-body-color;
+    -fx-background-color: #1e2433;
+
+}
+
+.jfx-combo-box .cell {
+    -fx-text-fill: WHITE;
+    -fx-background-color: #1e2433;
+}
+
+.chart-pie-title {
+    -fx-fill: gray;
+}
+
+.chart-pie-label {
+    -fx-text-fill: gray;
+    -fx-fill: gray;
+}
+
+.pagination-selected-page-label {
+    -fx-fill: white;
+}
+
+.pagination {
+    -fx-gap-start-and-end: black;
+}
+
+.label {
+    -fx-text-fill: transparent;
+}
+
